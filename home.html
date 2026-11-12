@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Comfy</title>
+   <link rel="stylesheet" href="./home.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- YOUR CART START  -->
+     <!-- MAIN CART START HERE -->
+     <div id="cart-overlay"></div>
+     <div id="your-cart" >
+        <i id="close-cart" class="fa-solid fa-xmark"></i>
+
+        <h1 id="cart-title">Your Bag</h1>
+     <!-- CART CONTAINER START  -->
+         <div class="cart-container">
+
+            <!-- PRODUCT CART START  -->
+         <div class="product-cart">
+            <!-- CARD HOLDER -->
+            <div class="card-holder">
+            </div> 
+            <!-- CARD HOLDER ENDS -->
+         </div>
+         
+           <!-- PRODUCT CART ENDS -->
+
+           <!-- TOTAL DETAILS START  -->
+        <div class="total">
+            <h5>Total:$0</h5>
+            <button id="check">CHECKOUT</button>
+        </div>
+            <!-- TOTAL DETAILS ENDS -->
+     </div>
+            <!-- CART CONATINER ENDS  -->
+     </div>
+    <!-- YOUR CART ENDS  -->
+
+    <!-- HEADER -->
+ <section class="banner">
+        <!-- nav links -->
+     <nav> 
+         <ul>
+             <li><a href="./home.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+         </ul>
+
+             <img src="./IMAGE/logo-white.svg" >
+        <!-- add cart -->
+        <div class="toggle-btn">
+
+            <i id="icon" class="fa-solid fa-cart-shopping"></i>
+            <span class="add-to-cart"></span>
+
+        </div>
+     </nav>      
+     <div class="hero-container">
+          
+        <h1>Rest, Relax, Unwind</h1>
+        <h3>Embrace your choices - we do</h3>
+        <a href="./products.html">SHOW NOW</a>
+     </div>
+</section>
+
+<!-- FEATURE SECTION START  -->
+<section class="feature-section"> 
+    <div class="title">
+        <h1><span>/   </span>Featured</h1>
+    </div> 
+    <!-- FEATURE IMAGE START -->
+    <section class="cards">
+        <div class="box">
+            <a id="hidden" href="">
+                <i id="mag" class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            
+            <button class="add-item"  onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></button>
+            <img id="img" src="./images/18a5ca7a-4a4b-40fe-b93e-9c9b5dda049d.jpg">
+            <p>High-Back Bench</p>
+            <h4>$9.99</h4>
+        </div>
+
+        <div class="box">
+            <a id="hidden" href="">
+                <i id="mag" class="fa-solid fa-magnifying-glass"></i>
+            </a> 
+            <button class="add-item" type="button" aria-label="Add Utopia Sofa to cart" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></button>
+            <img id="img" src="./images/2634ae1d-33b5-4786-87bf-69f774c6e778.jpg">
+            <p>Utopia Sofa</p>
+            <h4>$39.95</h4>
+        </div>
+
+        <div class="box">
+            <a id="hidden" href="">
+                <i id="mag" class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <button class="add-item" type="button" aria-label="Add Entertainment Center to cart" onclick="addToCart(this)"><i class="fa-solid fa-cart-shopping"></i></button>
+            <img id="img" src="./images/b48bc074-48e8-4906-8eb5-55dd62059fb4.jpg">
+            <p id="p">Entertainment Center</p>
+            <h4 id="h4">$25.98</h4>
+        </div>
+    
+    </section>
+    <!-- FEATURE IMAGE ENDS  -->
+
+     <a href="./products.html">ALL  PRODUCTS</a>
+
+</section>
+    
+<script src="./home.js"></script>
+</body>
+</html>

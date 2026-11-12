@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Comfy</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+      <!-- YOUR CART START  -->
+     <!-- MAIN CART START HERE -->
+       <div id="cart-overlay"></div>
+       <div id="your-cart" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+          <i id="close-cart" class="fa-solid fa-xmark"></i>
+
+          <h1 id="cart-title">Your Bag</h1>
+     <!-- CART CONTAINER START  -->
+         <div class="cart-container">
+
+            <!-- PRODUCT CART START  -->
+         <div class="product-carts">
+            <!-- CARD HOLDER -->
+            <div class="card-holder">
+            </div>
+            <!-- CARD HOLDER ENDS -->
+         </div>
+
+           <!-- PRODUCT CART ENDS -->
+
+           <!-- TOTAL DETAILS START  -->
+        <div class="total">
+            <h5 id="cart-total">Total:$0</h5>
+            <button id="check">CHECKOUT</button>
+        </div>
+            <!-- TOTAL DETAILS ENDS -->
+     </div>
+            <!-- CART CONATINER ENDS  -->
+     </div>
+    <!-- YOUR CART ENDS  -->
+
+       <!-- HEADER -->
+ <section class="banner">
+        <!-- nav links -->
+     <nav> 
+         <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+         </ul>
+
+             <img src="./" >
+        <!-- add cart -->
+        <div class="toggle-btn">
+
+            <button type="button" id="icon" class="cart-trigger" aria-label="Open cart" aria-controls="your-cart" aria-expanded="false">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            </button>
+            <span class="add-to-cart" aria-live="polite"></span>
+
+        </div>
+     </nav>      
+</section>
+<!-- SECTION TWO START  -->
+<section class="home">
+<h3>Home / Products</h3>
+</section>
+
+<section class="products">
+    <!-- PRODUCT FILTER START -->
+    <div class="filter">
+        <input id="search-input" type="text" placeholder="Search...">
+
+            <h4>Company</h4>
+            <button class="company-btn">All</button>
+            <button class="company-btn">Ikea</button>
+            <button class="company-btn">Marcos</button>
+            <button class="company-btn">Caressa</button>
+            <button class="company-btn">Liddy</button>
+            <h4>Price</h4>
+
+            <!-- PRICE-VALUE START -->
+            <input id="price-range" type="range" min="0" max="80" value="80">
+            
+            <p class="price-value">
+                Value: $<span id="price-value">80</span>
+            </p>
+    </div>
+    <!-- PRODUCT FILTER ENDS -->
+
+    <!-- PRODUCT CARDS START -->
+     <div class="product-cards">
+           <div class="card">
+           </div>
+    </div>
+
+    <div class="product-details" id="product-details"></div>
+
+    
+    <!-- PRODUCT CARDS END -->
+</section>
+
+
+<script src="products.js"></script>
+</body>
+</html>
