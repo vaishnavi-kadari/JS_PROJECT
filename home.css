@@ -480,3 +480,7 @@ nav img{
         right:calc(50% - 68px);
     }
 }
+
+a{
+    text-decoration: none;
+}

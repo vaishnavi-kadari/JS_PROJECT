@@ -30,7 +30,7 @@ const productsContainer = document.querySelector(".product-cards");
 const cartCount = document.querySelector(".add-to-cart");
 
 let products = [];
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("comfy-cart") || "[]");
 let displayedProducts = [];
 
 
@@ -102,7 +102,10 @@ function displayCart() {
     document.getElementById("cart-total").textContent = `Total: $${total.toFixed(2)}`;
     cartCount.textContent = itemCount;
     cartCount.style.visibility = itemCount > 0 ? "visible" : "hidden";
+    localStorage.setItem("comfy-cart", JSON.stringify(cart));
 }
+
+displayCart();
 
 document.querySelector(".card-holder").addEventListener("click", event => {
     const button = event.target.closest("button[data-action]");
@@ -190,8 +193,8 @@ const container = document.querySelector(".product-cards");
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                             
-                            <a id="button2" href="./CART%20DETAILS/index.html?id=${encodeURIComponent(item.id)}" aria-label="View ${product.name} details">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a class="search-product" href="./details.html?id=${encodeURIComponent(item.id)}" aria-label="View ${product.name} details">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                             </a>
                     
                         </div>
@@ -251,7 +254,6 @@ const container = document.querySelector(".product-cards");
             displayProducts(filteredProducts);
 
         });
-
 
 // BUTTON CLICK FILTER CODE
 

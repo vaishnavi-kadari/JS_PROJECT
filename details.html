@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Comfy</title>
+    <link rel="stylesheet" href="./products.css">
+    <link rel="stylesheet" href="./details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section class="banner">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+            <h3 class="brand">COMFY-<i class="fa-solid fa-couch" aria-hidden="true"></i></h3>
+            <div class="toggle-btn">
+                <a href="./products.html" aria-label="Return to products and cart">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <section class="home">
+        <h3><a href="./index.html">Home</a> / <span id="breadcrumb-product-name">Product</span></h3>
+    </section>
+
+    <main class="product-details-page">
+        <a class="details-back-link" href="./products.html">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to products
+        </a>
+        <p id="details-status" role="status" aria-live="polite">Loading product details...</p>
+        <section id="product-details" aria-live="polite"></section>
+    </main>
+
+    <script src="./details.js"></script>
+</body>
+</html>

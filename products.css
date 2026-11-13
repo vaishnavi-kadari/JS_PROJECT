@@ -429,7 +429,10 @@ nav img{
     font-size: 18px;
     color:white;
 }
-.card #button2{
+.card .search-product{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
     border-radius: 25px;
     width:35px;
     height:35px;
@@ -458,7 +461,7 @@ nav img{
     opacity: 1;
 }
 
-.card-image:hover #button2{
+.card-image:hover .search-product{
     opacity: 1;
 }
 /* HOVER EFFECT ENDS */
